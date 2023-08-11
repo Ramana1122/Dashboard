@@ -1,0 +1,96 @@
+.static-header{
+    width:100px;
+}
+.right-align:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.elipses {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 45%;
+  }
+
+ /* ... Other styles remain the same ... */
+
+.cards-container {
+    padding: 5px; /* Add padding between the header and cards */
+    display: grid;
+    /* flex-wrap:wrap;
+    justify-content: space-between; /* Center the cards horizontally */
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    /* align-items: center; Center the cards vertically */
+  }
+  
+  .mat-card {
+    width: 200px; /* 10px is the sum of flex gaps in the container */
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  
+  .statusInactive {
+    background-color: lightcoral; /* Alternate background color for the inactive card */
+  }
+  .statusNotice{
+    background-color: lightgrey;
+  }
+  /* ... Other styles remain the same ... */
+
+/* New styles for the card layout */
+.new-card-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .new-mat-card {
+    background-color: #0dacf0;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 1240px;
+    /* height: 150px; */
+    position: relative;
+
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+  }
+  
+  .floater {
+    float: left;
+    background-color: #0dacf0;
+  }
+  .floater1 {
+     display: inline-flex;
+     margin-left: 30px;
+     width: 970px;
+  }
+  .f1{
+    overflow-x: scroll;
+  }
+  .floater11{
+    margin-right: 20px;
+    display: inline-grid;
+    color:white;
+  }
+  
+  .large-icon {
+    font-size: 60px; /* Adjust the size as needed */
+  }
+
+.ram{
+    position: relative;
+    margin-left: 70px
+}
+
+  

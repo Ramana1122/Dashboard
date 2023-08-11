@@ -1,0 +1,638 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@font-face{
+    font-family: montserrat; 
+    font-style: normal; font-weight: 
+    400; 
+    src:url('../src/assets/fonts/Montserrat-Regular.ttf');
+}
+*{
+    font-family: montserrat; 
+}
+body{    
+    margin: 0!important;    
+    height:100%
+}
+
+.menu-mat-divider-border-bottom{
+    border-bottom: 1px;
+    border-color: #ffffff;
+    border-bottom-style: solid;
+}
+
+.menu-list-icon{
+    width:24px !important;
+    height:24px !important;    
+}
+.menu-list-item:hover{
+    background-color:#005289 !important;
+}
+.columnspacing {
+    width: 10%;
+}
+
+
+.bg-green {
+    background-color: #89f756;
+    background-image: linear-gradient(90deg, #89f756, #abff84);
+}
+.fa-green-icon > i{
+    color: #89f756 !important;
+    vertical-align: middle;
+}
+
+
+.fa-red-icon > i{
+    color:  #f97c7c !important;
+    vertical-align: middle;
+}
+
+.fa-error-icon > i{
+    color:  #e41515 !important;
+    vertical-align: middle;
+}
+
+.fa-warning-icon > i{
+    color:  #eec439 !important;
+    vertical-align: middle;
+}
+
+.bg-red {
+    background-color : #f97c7c;
+    background-image: linear-gradient(90deg, #f97c7c, #ff9191);
+
+}
+
+
+.fa-amber-icon > i{
+    color:  #ffbf00 !important;
+    vertical-align: middle;
+}
+
+.bg-amber {
+    background-color:#ffbf00;
+    background-image: linear-gradient(90deg, #ffbf00, #ffee00ea);
+
+}
+
+.fa-greenyellow-icon > i{
+    color:  rgb(181, 202, 0) !important;
+    vertical-align: middle;
+}
+.bg-greenyellow {
+    background-color:rgb(115, 202, 0);
+    background-image: linear-gradient(90deg, rgb(115, 202, 0),rgb(181, 250, 69));
+}
+
+.DGBcolumnspacing {
+    width: 16.6%;
+    text-align: left;
+}
+
+.amresultspacing {
+    width: 10%;
+    text-align: left;
+}
+
+.login-mat-card {   
+    margin-top:10%
+}
+
+.login-mat-card-action{
+    padding: 0 24px 0 24px !important;
+}
+
+.oneView{
+    font-size: 15px !important;
+    color:rgb(255,255,255) !important;
+    font-weight: bolder;
+    text-align: left;
+    margin:5px !important;
+}
+.dashBoard{
+    font-size: 15px !important;
+    color:rgb(255,255,255) !important;    
+    text-align: left;
+    margin:5px !important;
+}
+
+.dashBoardDevops{
+    font-size: 16px !important;
+    color:rgb(255,255,255) !important;    
+    text-align: left;
+    margin:5px !important;
+}
+.font-bold{
+font-weight: bold;
+}
+.mat-sidenav{
+    background-color: #0f7ab2 !important;           
+}
+.accent{
+    background-color: #58bbee !important;
+}
+.primary{
+    background-color: #0f7ab2 !important;
+}
+.mat-toolbar,.mat-header-row{
+    background-color :#2d9ce6 !important;
+}
+.font-color-accent{
+    color: #58bbee !important;
+}
+.mat-header-row, .mat-header-cell{
+    font-size:12px !important;    
+    height:32px !important;
+    font-weight: normal !important;
+}
+.mat-row,.mat-cell{
+    font-size:11px !important;  
+    height:32px !important;
+}
+
+.fa-grey-icon{
+    text-align: center;
+}
+.font-size-15{
+    font-size:15px !important;  
+}
+.font-size-11{
+    font-size:11px !important;  
+}
+.upperCase{
+    text-transform: uppercase !important;
+}
+.mat-row:nth-child(even){
+    background-color: #ebeced;
+}
+.mat-table{
+    margin-bottom: 22px;
+}
+.none{
+    display: none;
+}
+.grey-out{
+    opacity: 0.5;
+}
+.icon-size-22{
+    width: 22px;
+    height:22px;
+}
+
+.table-caption{
+    font-size:15px !important;
+    text-align: left;
+    color: rgb(71,70,70) !important;
+}
+.fa-grey-icon > i{
+    color: #474646 !important;
+    vertical-align: middle;
+}
+.p-0{
+    padding:0 !important;
+}
+.p-l-10{
+    padding-left:10px !important;
+}
+.menu-btn{
+background-color: #1976D2;
+height:62px;
+width: 50px;
+}
+.mat-toolbar-row{
+    color: #ffffff;
+    padding:0px;
+    height:62px;
+}
+.fa, .font-white, tr>th{
+    color: #ffffff !important;
+}
+.btn, .cursor{
+    cursor: pointer;
+}
+.clickable:hover{
+    background-color: rgb(255,247,203) !important;
+    cursor: pointer;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+.fa-icon-btn-menu{
+    border-radius: 0 !important;
+    color: #ffffff;
+    width:50px !important;
+    height:64px !important;    
+}
+.fa-icon-btn-menu:hover{
+    background-color: #474646;
+}
+.mat-divider-menu{
+    background-color:#ffffff !important;
+}
+.statusbar{
+    float: left;
+    width: 100%;
+    background: #474646;
+    padding: 15px 20px;
+    height:50px;
+}
+
+.dgbstatusbar{
+    float: left;
+    width: 100%;
+    background: #2d9ce6 !important;
+    padding: 15px 20px;
+    height:50px;
+}
+
+
+.status_header{
+    font-size: 1.42rem;
+    margin-top:5px;
+    margin-bottom:25px;
+}
+.mat-card-layout{
+    padding: 0px !important;
+    margin:18px;
+    border-radius:10px !important;
+    height:150px;
+}
+.mat-card-content{
+    border-radius:10px !important;
+}
+.card-header{
+    border-radius:10px 0 0 10px !important;
+    text-align: center;
+    font-size:15px;
+}
+.card-footer{
+    border-radius:0 10px 10px 0 !important;
+    text-align: center;
+    font-size:24px;
+}
+.mat-card-actions{
+    margin:0 !important;
+}
+
+.s-100{
+    min-width:100px !important;
+}
+.s-150{
+    min-width:150px !important;
+}
+.f-s-14{
+    font-size: 14px;
+}
+.f-s-22{
+    font-size: 22px !important;
+}
+.f-s-30{
+    font-size: 30px !important;
+}
+.oneview_mat-card_content_div {
+    float:left; 
+    display:inline-flex; 
+    flex-wrap:nowrap; 
+    overflow-x:auto; 
+    overflow-y:hidden;
+    width:100%
+}
+.oneview_row_content_div_div{
+    display:inline-flex; 
+    text-align:center; 
+    padding:0px 20px; 
+    border-right:1px solid #79c9f1; 
+    align-items:center; 
+    color:#FFF; 
+    font-size:15px;    
+    padding-top:30px;
+}
+.oneview_row_content_div_div_one{
+    text-align:right; 
+    color:#FFF; 
+    font-size:15px;   
+    margin-bottom:2px; 
+}
+.card-footer-span{
+    font-size: 4rem;
+    line-height: 1;
+    margin-top:30px;
+}
+
+.highlightHover > span:hover , .totalCount{
+border-radius: 5px !important;
+background-color: rgb(36,211,2);
+color:#FFFFFF !important; 
+cursor: pointer;
+}
+.highlightHover > span, .totalCount, .total > span{
+    display: block;
+    text-align: center;
+    width: 32px !important;
+    height:21px !important;
+    line-height:21px;
+    cursor:default;    
+}
+.status_count{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    color: #FFF;
+    font-size: 4rem;
+    margin: 0;
+}
+.elipses{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.status{
+    background: #7b7b7b;    
+}
+.statusActive{
+    background: #7cbb52
+}
+.statusLongLeave{
+    background :#ffbf00;
+}
+.statusActiveText{
+    color:#7cbb52;
+}
+.statusReleivedText{
+    color:#FF0000;
+}
+.statusBudget{
+    background:#2E7ECD;
+}
+.oneview_user{
+    float: right;
+    padding: 9px 20px;
+    color: #fcff00;
+    font-size: 14px;
+}
+html { 
+    height: 100%; 
+    font-family: montserrat !important; 
+}
+.w-30{
+    width:30% !important;
+}
+.lh{
+    line-height: 60px;
+}
+.m-15{
+    margin: 15px !important;
+}
+.m-l-15{
+    margin-left: 15px !important;
+}
+.m-5{
+    margin: 5px !important;
+}
+.size-100{
+font-size:64px !important;
+}
+
+.anchor{    
+    text-decoration: underline !important;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-blueShade{
+    background-color: #49A1EC;
+}
+.bg-lightblack {
+    background-color: #464343;
+}
+
+/*p-select start*/
+body .ui-chkbox .ui-chkbox-box.ui-state-active {
+    border-color: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #585858 !important;    
+}
+body .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight {
+    color: #ffffff;
+    background-color:#4c4c4c !important;
+}
+body .ui-chkbox .ui-chkbox-box:not(.ui-state-disabled):hover {
+    border-color: #4c4c4c !important;
+}
+
+body .ui-chkbox .ui-chkbox-box {
+    border: 1px solid #ffffff !important;
+    background-color: #ffffff !important;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+body .ui-multiselect:hover  {
+    background: #585858 !important;
+    border: 1px solid #585858 !important;
+    transition: border-color 0.2s;
+}
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight, body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group.ui-state-highlight {
+    color: #ffffff !important;
+    background-color: #585858 !important;
+}
+body .ui-dropdown:hover {
+    border-color: #585858 !important;
+}
+body .ui-dropdown:not(.ui-state-disabled) .ui-state-focus{
+    border-color: #585858 !important;
+}
+body .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-container .ui-multiselect-filter-icon {
+    color: #ffffff !important;
+    top: 50%;
+    margin-top: -.5em;
+    right: .5em;
+    left: auto;
+}
+body .ui-inputtext:enabled:hover:not(.ui-state-error) {
+    border-color: #585858 !important;
+}
+body .ui-inputtext:enabled:focus:not(.ui-state-error) {
+    border-color: #585858 !important;
+}
+/*p-select end*/
+.norecord{
+    background-color:white;
+    font-size:18px;
+    border-bottom:1px solid rgba(0,0,0,.12);
+    display:flex;
+    flex:1;
+    padding:10px;
+}
+.tooltip{
+    background-color: #65e7bc;
+    position: fixed;
+    width: 225px;
+    left:100%;
+    margin-left: -100px;
+    text-align: center;
+  }
+body .ui-widget,.ui-inputtext {
+font-size: 9pt!important;
+}
+
+body .ui-menubar{
+    width:100%;
+  }
+
+.content{
+    display: flex;
+    width:100%;
+    padding: 1px;
+}
+.ui-panel,.ui-panel-titlebar{
+    border-radius:0px!important;
+}
+.ui-multiselect{
+    width:100%!important;
+}
+.cdk-overlay-container{
+    z-index: 100000!important;
+}
+.right-align{
+    text-align:right;
+}
+.float-right{
+    float:right;
+}
+table,th,td{
+    font-size: 8pt!important;
+    font-weight: 200;
+}
+/* th{
+    padding:15px!important;
+} */
+th.vtext {
+    padding:0;
+    /* Something you can count on */
+    height: 100px;
+    white-space: nowrap;
+  }
+  
+  th.vtext > div {
+      vertical-align: bottom;
+      text-align: left;
+    transform: 
+      /* Magic Numbers */
+      /* 45 is really 360 - 45 */
+      rotate(270deg);
+    width: 60px;
+    height:80px;
+  }
+ .drop-down{
+     width:100%!important;
+ }
+
+ .DGBLastcolumnspacing{
+     text-align: center;
+ }
+
+
+ .DGBPass{
+     background-color: #89f756;
+     background-image: linear-gradient(90deg, #89f756, #abff84);
+     text-align: center;
+ }
+
+ .DGBAvg{
+    background-color: orange;
+    background-image: linear-gradient(90deg, orange, orange);
+    text-align: center;
+}
+
+.mat-progress-bar {
+    height: 15px !important;
+    border-radius: 20px;
+}
+
+.mat-progress-bar-fill::after{
+    background-color: #2d9ce6;
+}
+
+.mat-progress-bar-buffer {
+    background: #b9b8b8;
+}
+
+.DGBFail{
+    background-color : #f97c7c;
+    background-image: linear-gradient(90deg, #f97c7c, #ff9191);
+    text-align: center;
+}
+
+  app-home,app-resource{
+    width:100%!important;
+}
+  /* Column Priorities */
+  @media only all {
+    th.ui-p-6,
+    td.ui-p-6,
+    th.ui-p-5,
+    td.ui-p-5,
+    th.ui-p-4,
+    td.ui-p-4,
+    th.ui-p-3,
+    td.ui-p-3,
+    th.ui-p-2,
+    td.ui-p-2,
+    th.ui-p-1,
+    td.ui-p-1 {
+        display: none;
+    }
+}
+
+/* Show priority 1 at 320px (20em x 16px) */
+@media screen and (min-width: 20em) {
+    th.ui-p-1,
+    td.ui-p-1 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 2 at 480px (30em x 16px) */
+@media screen and (min-width: 30em) {
+    th.ui-p-2,
+    td.ui-p-2 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 3 at 640px (40em x 16px) */
+@media screen and (min-width: 40em) {
+    th.ui-p-3,
+    td.ui-p-3 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 4 at 800px (50em x 16px) */
+@media screen and (min-width: 50em) {
+    th.ui-p-4,
+    td.ui-p-4 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 5 at 960px (60em x 16px) */
+@media screen and (min-width: 60em) {
+    th.ui-p-5,
+    td.ui-p-5 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 6 at 1,120px (70em x 16px) */
+@media screen and (min-width: 70em) {
+    th.ui-p-6,
+    td.ui-p-6 {
+        display: table-cell;
+    }
+}
+
+

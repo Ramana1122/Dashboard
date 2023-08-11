@@ -1,0 +1,82 @@
+<mat-sidenav-container class="main-container">
+    <mat-sidenav-content>
+      <mat-toolbar class="header-toolbar">
+        <mat-toolbar-row>
+          <div class="header-content">
+            <span class="dashBoard font-bold">RESOURCE DASHBOARD</span>
+            <button matTooltip="Grid View" matTooltipPosition="below" class="font-white btn m-5">
+              <i class="fa fa-th-large"></i>
+            </button>
+            <button matTooltip="List View" matTooltipPosition="below" class="font-white btn m-5 grey-out">
+              <i class="fa fa-list font-white"></i>
+            </button>
+          </div>
+          <div class="elipses">
+            <span class="dashBoard elipses" matTooltip="Medchart, Location: IND - Status: Active" matTooltipPosition="below">Medchart, Location: IND - Status: Active</span>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <!-- //////////////////////////////////////////////////////////////////////// -->
+
+
+  <div fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="5px" class="cards-container">
+    <!-- First Card -->
+    <div fxFlex="33%" fxFlex.md="33%" fxFlex.sm="50%" fxFlex.xs="100%">
+      <mat-card class="mat-card-layout mat-card statusActive">
+        <mat-card-content fxLayout="row" fxLayoutAlign="start center">
+          <div class="m-15" fxFlex="100" fxLayout="column">
+            <h5 class="font-white status_header">Active</h5>
+            <!-- Content for the first card -->
+            <h1 class="status_count pointer">49</h1>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  
+
+  
+    <!-- Third Card -->
+    <div fxFlex="33%" fxFlex.md="33%" fxFlex.sm="50%" fxFlex.xs="100%">
+      <mat-card class="mat-card-layout mat-card statusNotice">
+        <mat-card-content fxLayout="row" fxLayoutAlign="start center">
+          <div class="m-15" fxFlex="100" fxLayout="column">
+            <h5 class="font-white status_header">Notice</h5>
+            <!-- Content for the third card -->
+            <h1 class="status_count pointer">40</h1>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <!-- //////////////////////////////////////////////////////////////// -->
+
+  <div class="main-container">
+    <div class="details-container">
+      <div class="new-card-container">
+        <div *ngFor="let card of cardsData" class="new-mat-card">
+          <span class="status_header font-white floater">
+            {{ card.title }} <br>
+            <i class="{{ card.iconName }} large-icon"></i>
+          </span>
+          <span *ngIf="card.details" class="floater1" [ngClass]="{ 'f1': card.details.length > 9 }">
+            <span *ngFor="let detail of card.details; let i = index" class="floater11">
+              <span style="height: 133px;">{{ detail.label }}</span>
+              <span>{{ detail.value }}</span>
+              <span>{{ detail.count }}%</span>
+            <!-- <p>{{detail|json}}</p> -->
+            </span>
+          </span>
+          <div class="ram">
+            <h1 class="status_count pointer">{{ card.count }}</h1>
+            <i class='fa fa-bar-chart'></i>
+            <h5>Total</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
