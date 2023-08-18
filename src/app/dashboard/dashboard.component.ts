@@ -18,15 +18,15 @@ export class DashboardComponent {
     details: [] },
 
 
-    { title: 'Release',iconName: 'fa fa-key',
+    { title: 'Release', count: 6, iconName: 'fa fa-key',
   details:[] },
 
 
-    { title: 'Resigned',iconName: 'fa fa-user-times',
+    { title: 'Resigned', count: 8, iconName: 'fa fa-user-times',
   details:[] },
 
 
-    { title: 'Onborded', iconName: 'fa fa-user-plus',
+    { title: 'Onborded', count: 1, iconName: 'fa fa-user-plus',
   details:[] },
   ];
 

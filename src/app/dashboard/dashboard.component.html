@@ -57,10 +57,24 @@
     <div class="details-container">
       <div class="new-card-container">
         <div *ngFor="let card of cardsData" class="new-mat-card">
-          <span class="status_header font-white floater">
+
+
+
+          <span class="status_header font-white floater" style="border-right: 1px solid white;padding-left:10px; background-color:#0f7ab2 ;min-width: 200px;
+          max-width: 200px;padding-top: 0px; border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px; 
+          height: 149px;
+          margin-top: -14px;
+          margin-left: -14px"
+          >
+          {{ card.title }} <br>
+              <i class="{{ card.iconName }} large-icon"></i>
+             </span>  
+
+          <!-- <span class="status_header font-white floater">
             {{ card.title }} <br>
             <i class="{{ card.iconName }} large-icon"></i>
-          </span>
+          </span> -->
           <span *ngIf="card.details" class="floater1" [ngClass]="{ 'f1': card.details.length > 9 }">
             <span *ngFor="let detail of card.details; let i = index" class="floater11">
               <span style="height: 133px;">{{ detail.label }}</span>
